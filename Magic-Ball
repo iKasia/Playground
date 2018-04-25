@@ -1,0 +1,27 @@
+<html><head><title>Magic Ball</title>
+<script language="javascript" type="text/javascript">
+let userName = prompt("What's your name?");
+userName ? console.log('Hello, '+ userName+ '!') : console.log('Hello!');
+
+let userQuestion = 'Will I win EuroMillions?';
+
+const randomNumber = Math.floor(Math.random()*8);
+
+let eightBall = '';
+
+if (randomNumber === 0) {console.log(eightBall='It is certain');}
+else if (randomNumber === 1){console.log(eightBall="You wish");}
+else if (randomNumber === 2){console.log(eightBall="Start packing ... your lunch. Time to go to work.");}
+else if (randomNumber === 3){console.log(eightBall="Start packing, you sure will!");}
+else if (randomNumber === 4){console.log(eightBall="Are you kidding me?");}
+else if (randomNumber === 5){console.log(eightBall="Nah");}
+else if (randomNumber === 6){console.log(eightBall="You already did!");}
+else if (randomNumber === 7){console.log(eightBall="I'm not sure at this point");}
+
+alert(`What ${userName} wants to know is: ${userQuestion}`);
+alert(`The eight ball answered: ${eightBall}`)
+</script>
+</head>
+<body>
+</body>
+</html>
